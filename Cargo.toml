@@ -68,6 +68,16 @@ targets = ["aarch64-apple-darwin", "x86_64-apple-darwin", "x86_64-unknown-linux-
 pr-run-mode = "plan"
 # Whether to install an updater program
 install-updater = false
+
+[workspace.metadata.dist.dependencies.homebrew]
+protobuf = "*"
+
+[workspace.metadata.dist.dependencies.apt]
+protobuf-compiler = "*"
+
+[workspace.metadata.dist.dependencies.chocolatey]
+protoc = "*"
+
 [profile.release]
 debug = 1
 
